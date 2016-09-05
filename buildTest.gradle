@@ -1,0 +1,88 @@
+group 'com.krish.scala'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.5
+def projectVersion=1.0
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
+
+task Hello{
+    doFirst{
+        println "Init Gradle"
+    }
+    doLast{
+        println "Hello Gralde"
+    }
+
+}
+
+task Hello1{
+    doFirst{
+        println "Init Gradle1"
+    }
+    doLast{
+        println "Hello Gralde1"
+    }
+
+}
+
+task wrapper(type:Wrapper){
+    gradleVersion = '3.0'
+}
+
+project.task("TestTask1")
+task("TestTask2")
+task "TestTask3"
+task TestTask4
+
+TestTask3 {println "Hello Bobby"}.description = "Test3 Desc"
+
+task TestTask5{
+    description "This is Task5"
+
+    doLast{
+        println "Project version : $projectVersion"
+        println "$sourceCompatibility"
+        println "Holds the last step of Task5"
+    }
+} dependsOn TestTask3, TestTask4
+
+
+task TaskA << {println "This is TaskA"}
+task TaskB << {println "This is TaskB"}
+task TaskC << {println "This is TaskC"}
+task TaskD << {println "This is TaskD"}
+task TaskE << {println "This is TaskE"}
+
+TaskA {}.dependsOn TaskB, TaskC, TaskD
+TaskC {}.dependsOn TaskE
+TaskD {}.dependsOn TaskE
+
+//Switches the order
+TaskC {}.mustRunAfter TaskD
+TaskB {}.mustRunAfter TaskC
+
+//Allows you to run for sure after the execution of task
+TaskE {}.finalizedBy TaskC
+
+task CpyTask(type:Copy){
+
+    from 'src'
+    into 'dummy'
+}
+
+task CnfCopy(type:Copy){
+    include "web.xml"
+    from 'src'
+    into 'dummy'
+    expand {
+        [resourceRefName:'jdbc/krishDB']
+    }
+}

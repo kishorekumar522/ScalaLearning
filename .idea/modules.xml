@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Learning.iml" filepath="$PROJECT_DIR$/.idea/modules/Learning.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Learning_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Learning_main.iml" group="Learning" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Learning_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Learning_test.iml" group="Learning" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scalademo/ScalaDemo.iml" filepath="$PROJECT_DIR$/.idea/modules/scalademo/ScalaDemo.iml" group="ScalaDemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scalademo/ScalaDemo_main.iml" filepath="$PROJECT_DIR$/.idea/modules/scalademo/ScalaDemo_main.iml" group="ScalaDemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scalademo/ScalaDemo_test.iml" filepath="$PROJECT_DIR$/.idea/modules/scalademo/ScalaDemo_test.iml" group="ScalaDemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sparkdemo/SparkDemo.iml" filepath="$PROJECT_DIR$/.idea/modules/sparkdemo/SparkDemo.iml" group="SparkDemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sparkdemo/SparkDemo_main.iml" filepath="$PROJECT_DIR$/.idea/modules/sparkdemo/SparkDemo_main.iml" group="SparkDemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sparkdemo/SparkDemo_test.iml" filepath="$PROJECT_DIR$/.idea/modules/sparkdemo/SparkDemo_test.iml" group="SparkDemo" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,59 @@
+group 'com.krish.scala'
+version '1.0'
+
+sourceCompatibility = 1.7
+
+apply plugin: 'scala'
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+ext{
+    mainClassName = 'com.ykk.basic.HelloScala'
+}
+
+dependencies{
+    compile 'org.slf4j:slf4j-api:1.7.5'
+    runtime "org.scala-lang:scala-library:2.11.8"
+    runtime "org.scala-lang:scala-compiler:2.11.8"
+//        compile group: 'com.typesafe.akka', name: 'akka-actor_2.11', version: '2.4.8'
+    compile fileTree(dir: 'src/main/resources', include: '*.jar')
+    testCompile "junit:junit:4.11"
+
+}
+
+jar {
+    manifest {
+        attributes "Main-Class": "$mainClassName"
+    }
+
+//    To add all the dependencies to jar
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
+
+
+task withoutMain(type: Jar){
+    baseName = project.name + '-withoutMain'
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+}
+
+task fatJar(type: Jar) {
+    manifest {
+        attributes 'Implementation-Title': 'Scala Examples',
+                'Implementation-Version': version,
+                'Main-Class': mainClassName
+    }
+    baseName = project.name + '-bundle'
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+}
+
+task helloScala(type: JavaExec, dependsOn: classes) {
+    main = 'com.ykk.basic.HelloScala'
+    classpath sourceSets.main.runtimeClasspath
+    classpath configurations.runtime
+}

@@ -1,0 +1,5 @@
+rootProject.name = 'Learning'
+include 'scalademo'
+include 'sparkdemo'
+findProject(':sparkdemo')?.name = 'SparkDemo'
+findProject(':scalademo')?.name = 'ScalaDemo'

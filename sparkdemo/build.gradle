@@ -1,0 +1,22 @@
+group 'com.krish.scala'
+version '1.0'
+
+sourceCompatibility = 1.7
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies{
+    compile 'org.slf4j:slf4j-api:1.7.5'
+    compile "org.scala-lang:scala-library:2.11.7"
+    compile "org.scala-lang:scala-compiler:2.11.7"
+    compile group: 'org.apache.spark', name: 'spark-core_2.11', version: '2.0.0'
+//    compile fileTree("src/main/resources/*.jar")
+    testCompile "junit:junit:4.11"
+}
+
+task helloSpark{
+
+}

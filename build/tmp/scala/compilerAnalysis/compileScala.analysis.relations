@@ -1,0 +1,13 @@
+products:
+   src/main/scala/com/basicScala/HelloScala.scala -> build/classes/main/com/basicScala/HelloScala1$.class
+   src/main/scala/com/basicScala/HelloScala.scala -> build/classes/main/com/basicScala/HelloScala1$delayedInit$body.class
+   src/main/scala/com/basicScala/HelloScala.scala -> build/classes/main/com/basicScala/HelloScala1.class
+binary dependencies:
+   src/main/scala/com/basicScala/HelloScala.scala -> /Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/jre/lib/rt.jar
+   src/main/scala/com/basicScala/HelloScala.scala -> /Users/kishoreyakkala/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.11.8/ddd5a8bced249bedd86fb4578a39b9fb71480573/scala-library-2.11.8.jar
+source dependencies:
+external dependencies:
+class names:
+   src/main/scala/com/basicScala/HelloScala.scala -> com.basicScala.HelloScala1
+   src/main/scala/com/basicScala/HelloScala.scala -> com.basicScala.HelloScala1$
+   src/main/scala/com/basicScala/HelloScala.scala -> com.basicScala.HelloScala1$delayedInit$body
