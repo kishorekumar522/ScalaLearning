@@ -15,10 +15,10 @@ ext{
 }
 
 dependencies{
-    compile 'org.slf4j:slf4j-api:1.7.5'
-    runtime "org.scala-lang:scala-library:2.11.8"
-    runtime "org.scala-lang:scala-compiler:2.11.8"
-//        compile group: 'com.typesafe.akka', name: 'akka-actor_2.11', version: '2.4.8'
+    compile 'org.slf4j:slf4j-api:1.7.5'l
+    compile "org.scala-lang:scala-library:2.11.8"
+    compile "org.scala-lang:scala-compiler:2.11.8"
+    compile group: 'com.typesafe.akka', name: 'akka-actor_2.11', version: '2.4.8'
     compile fileTree(dir: 'src/main/resources', include: '*.jar')
     testCompile "junit:junit:4.11"
 
