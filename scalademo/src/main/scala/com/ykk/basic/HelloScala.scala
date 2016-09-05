@@ -6,4 +6,5 @@ package com.ykk.basic
 object HelloScala extends App{
 
   println("Hello, Scala!")
+  println("Added to GitHub")
 }

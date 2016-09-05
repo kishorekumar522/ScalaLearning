@@ -6,8 +6,8 @@ allprojects{
     apply plugin: 'idea'
 
     repositories{
-        mavenLocal()
         mavenCentral()
+        mavenLocal()
     }
 
     dependencies{
