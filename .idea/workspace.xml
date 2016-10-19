@@ -1,18 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c84a3fb-1c5e-463f-9650-f8e42fcd7562" name="Default" comment="adding Tree travsel problem">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_slf4j_api_1_7_14.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_slf4j_log4j12_1_7_14.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scalademo/log.out" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scalademo/src/main/conf/log4j.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scalademo/src/main/scala/com/ykk/Demo/FunctionalTest.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scalademo/src/main/scala/com/ykk/Demo/SLf4JTest.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scalademo/src/main/scala/com/ykk/Demo/ScalaClassRepresentation.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/scalademo/ScalaDemo_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/scalademo/ScalaDemo_main.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/scalademo/ScalaDemo_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/scalademo/ScalaDemo_test.iml" />
+    <list default="true" id="1c84a3fb-1c5e-463f-9650-f8e42fcd7562" name="Default" comment="Adding SLF4J logging features Test">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scalademo/build.gradle" afterPath="$PROJECT_DIR$/scalademo/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scalademo/log.out" afterPath="$PROJECT_DIR$/scalademo/log.out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scalademo/src/main/scala/com/ykk/Demo/SLf4JTest.scala" afterPath="$PROJECT_DIR$/scalademo/src/main/scala/com/ykk/Demo/SLf4JTest.scala" />
     </list>
     <ignored path="Learning.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -113,23 +105,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SLf4JTest.scala" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SLf4JTest.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scalademo/src/main/scala/com/ykk/Demo/SLf4JTest.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-              <folding>
-                <element signature="e#22#66#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="180">
+              <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="log4j.properties" pinned="false" current-in-tab="true">
+      <file leaf-file-name="log4j.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scalademo/src/main/conf/log4j.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="50" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
+            <state relative-caret-position="153">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -138,8 +128,8 @@
       <file leaf-file-name="log.out" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scalademo/log.out">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="306">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -910,9 +900,9 @@
         <option value="$PROJECT_DIR$/scalademo/src/main/scala/com/ykk/Demo/ScalaClassRepresentation.scala" />
         <option value="$PROJECT_DIR$/scalademo/src/main/scala/com/ykk/Demo/FunctionalTest.scala" />
         <option value="$PROJECT_DIR$/scalademo/build.gradle" />
+        <option value="$PROJECT_DIR$/scalademo/src/main/conf/log4j.properties" />
         <option value="$PROJECT_DIR$/scalademo/log.out" />
         <option value="$PROJECT_DIR$/scalademo/src/main/scala/com/ykk/Demo/SLf4JTest.scala" />
-        <option value="$PROJECT_DIR$/scalademo/src/main/conf/log4j.properties" />
       </list>
     </option>
   </component>
@@ -1162,7 +1152,7 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="com.ykk.Demo.SLf4JTest" />
-      <option name="VM_PARAMETERS" value="-Dlog4j.configuration=$PROJECT_DIR$/scalademo/src/main/conf/log4j.properties" />
+      <option name="VM_PARAMETERS" value="-Dlog4j.configuration=file://$PROJECT_DIR$/scalademo/src/main/conf/log4j.properties" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -1604,7 +1594,14 @@
       <option name="project" value="LOCAL" />
       <updated>1475802272040</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Adding SLF4J logging features Test">
+      <created>1476896808334</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1476896808334</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1636,10 +1633,10 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33080426" sideWeight="0.38168558" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.323217" sideWeight="0.5794165" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.323217" sideWeight="0.58184767" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.323217" sideWeight="0.42058346" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32776934" sideWeight="0.6247974" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.323217" sideWeight="0.41815236" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32776934" sideWeight="0.62074554" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32776934" sideWeight="0.6580227" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1679,7 +1676,8 @@
     <MESSAGE value="Solution to find Equilibrium index from array" />
     <MESSAGE value="Majorly adding finding best team split problem" />
     <MESSAGE value="adding Tree travsel problem" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding Tree travsel problem" />
+    <MESSAGE value="Adding SLF4J logging features Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding SLF4J logging features Test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1999,14 +1997,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scalademo/log.out">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scalademo/src/main/scala/com/ykk/Demo/FunctionalTest.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -2015,20 +2005,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scalademo/src/main/scala/com/ykk/Demo/SLf4JTest.scala">
+    <entry file="file://$PROJECT_DIR$/scalademo/src/main/conf/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-          <folding>
-            <element signature="e#22#66#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="153">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scalademo/src/main/conf/log4j.properties">
+    <entry file="file://$PROJECT_DIR$/scalademo/log.out">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="50" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
+        <state relative-caret-position="306">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scalademo/src/main/scala/com/ykk/Demo/SLf4JTest.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
           <folding />
         </state>
       </provider>
