@@ -15,7 +15,10 @@ ext{
 }
 
 dependencies{
-    compile 'org.slf4j:slf4j-api:1.7.5'l
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.14'
+//    compile group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.14'
+    compile group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.7.14'
+    compile group: 'log4j', name: 'log4j', version: '1.2.14'
     compile "org.scala-lang:scala-library:2.11.8"
     compile "org.scala-lang:scala-compiler:2.11.8"
     compile group: 'com.typesafe.akka', name: 'akka-actor_2.11', version: '2.4.8'

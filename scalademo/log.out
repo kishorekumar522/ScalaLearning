@@ -1,0 +1,8 @@
+2016-10-19 22:32:48,485 [main]  INFO-15 SLf4JTest.scala - logger property : /Users/kishoreyakkala/git/ScalaLearning/scalademo/src/main/conf/log4j.properties
+2016-10-19 22:32:48,489 [main]  INFO-16 SLf4JTest.scala - Hello SLF4J Test
+2016-10-19 22:34:07,708 [main]  INFO-15 SLf4JTest.scala - logger property : /Users/kishoreyakkala/git/ScalaLearning/scalademo/src/main/conf/log4j.properties
+2016-10-19 22:34:07,710 [main]  INFO-16 SLf4JTest.scala - Hello SLF4J Test
+2016-10-19 22:34:39,101 [main]  INFO-15 SLf4JTest.scala - logger property : /Users/kishoreyakkala/git/ScalaLearning/scalademo/src/main/conf/log4j.properties
+2016-10-19 22:34:39,108 [main]  INFO-16 SLf4JTest.scala - Hello SLF4J Test
+2016-10-19 22:35:23,862 [main]  INFO-15 SLf4JTest.scala - logger property : /Users/kishoreyakkala/git/ScalaLearning/scalademo/src/main/conf/log4j.properties
+2016-10-19 22:35:23,866 [main]  INFO-16 SLf4JTest.scala - Hello SLF4J Test
