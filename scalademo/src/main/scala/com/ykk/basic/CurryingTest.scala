@@ -16,6 +16,7 @@ object CurryingTest{
     println(s"Mul => ${mathOp("*")(1,2)}")
     println(s"Div => ${mathOp("/")(2,2)}")
 
+    List()
     println(s"DivBy2 => ${divBy2(10)}")
     println(s"DivBy3 => ${divBy3(10)}")
   }
