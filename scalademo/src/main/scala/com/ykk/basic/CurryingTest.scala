@@ -16,10 +16,12 @@ object CurryingTest{
     println(s"Mul => ${mathOp("*")(1,2)}")
     println(s"Div => ${mathOp("/")(2,2)}")
 
-    List()
+    List().size
+    Array().size
     println(s"DivBy2 => ${divBy2(10)}")
     println(s"DivBy3 => ${divBy3(10)}")
   }
+
 
     def mathOp(op:String)(op1:Int, op2:Int) : Double = op match {
       case "+" => op1 + op2

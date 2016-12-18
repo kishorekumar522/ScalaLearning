@@ -15,6 +15,7 @@
     <orderEntry type="library" name="Gradle: com.typesafe.akka:akka-actor_2.11:2.4.8" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.spark:spark-core_2.11:2.0.0" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.spark:spark-sql_2.11:2.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: mysql:mysql-connector-java:5.0.8" level="project" />
     <orderEntry type="library" name="Gradle: junit:junit:4.11" level="project" />
     <orderEntry type="library" name="Gradle: org.scala-lang.modules:scala-xml_2.11:1.0.4" level="project" />
     <orderEntry type="library" name="Gradle: org.scala-lang.modules:scala-parser-combinators_2.11:1.0.4" level="project" />

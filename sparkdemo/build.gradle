@@ -14,12 +14,21 @@ dependencies{
     compile "org.scala-lang:scala-compiler:2.11.7"
     compile group: 'org.apache.spark', name: 'spark-core_2.11', version: '2.0.0'
     compile group: 'org.apache.spark', name: 'spark-sql_2.11', version: '2.0.0'
+
+    compile group: 'mysql', name: 'mysql-connector-java', version: '5.0.8'
 //    compile fileTree("src/main/resources/*.jar")
     testCompile "junit:junit:4.11"
 }
 
-task helloSpark{
-
+task fatJar(type: Jar) {
+    zip64=true
+    manifest {
+        attributes 'Implementation-Title': 'Spark Examples',
+                'Implementation-Version': version
+    }
+    baseName = project.name + '-bundle'
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
 }
 
 task helloSparkSession{
